@@ -24,7 +24,7 @@ app.engine('file', (filePath, options, callback) => {
       let result = '';
 
       options.allAnimals.forEach((el) => {
-        result += `<h2>Name: ${el.name}<h2><h3>Species: ${el.species}</h3><h3>Age: ${el.age}</h3><a href="/api/animal/${el.id}"><button>Edit</button></a><br><br>`;
+        result += `<h2>Name: ${el.name}<h2><h3>Species: ${el.species}</h3><h3>Age: ${el.age}</h3><a href="/api/animal/${el.id}"><button>More Info</button></a><br><br>`;
       });
 
       const rendered = content.toString().replace('#content#', result);

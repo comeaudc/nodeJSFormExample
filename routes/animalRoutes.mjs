@@ -3,6 +3,7 @@ import animals from '../data/data.mjs';
 const router = express.Router();
 
 // Create / Read
+//  /api/animal - POST
 router
   .route('/')
   .post((req, res) => {
@@ -47,14 +48,7 @@ router
       }
     });
 
-    let options = {
-      id: animal.id,
-      name: animal.name,
-      species: animal.species,
-      age: animal.age,
-    };
-
-    if (animal) res.render('show', options);
+    if (animal) res.json(animal);
     else res.send('Incorrect ID');
   })
   .delete((req, res) => {
@@ -65,11 +59,7 @@ router
       }
     });
 
-    let options = {
-      allAnimals: animals,
-    };
-
-    if (animal) res.render('showAll', options);
+    if (animal) res.json(animal);
     else res.send('Incorrect ID');
   })
   .get((req, res) => {

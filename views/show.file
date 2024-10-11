@@ -17,17 +17,6 @@
       <h3>Species: #species#</h3>
       <h3>Age: #age#</h3>
 
-      <form action='/api/animal/#id#' method='patch'><br>
-      <input type='text' name='name' placeholder='Name...' /><br>
-      <input type='text' name='species' placeholder='Species...'  /><br>
-      <input type='number' name='age' placeholder='Age...'  /><br>
-      <input type='submit' />
-      </form>
-
-      <form action="/api/animal/#id#" method="delete">
-        <input type='submit'  value="delete" />
-      </form>
-
     </div>
   </body>
 </html>

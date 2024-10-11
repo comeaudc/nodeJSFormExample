@@ -12,13 +12,16 @@
     <a href='/api/animal'>Show the Whole Zoo!</a>
     </nav>
     <div id="app">
+
     <h1>Create A New Animal</h1>
-      <form action='/api/animal' method='post'><br>
+
+      <form action="/api/animal" method="post"><br>
       <input type='text' name='name' placeholder='Name...' /><br>
       <input type='text' name='species' placeholder='Species...'  /><br>
       <input type='number' name='age' placeholder='Age...'  /><br>
       <input type='submit' />
       </form>
+
     </div>
   </body>
 </html>
