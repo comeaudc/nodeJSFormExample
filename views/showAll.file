@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zoo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+    <nav>
+    <a href='/api/animal/new'>Create A New Animal</a>
+    <a href='/api/animal'>Show the Whole Zoo!</a>
+    </nav>
+    <h1>All Animals</h1>
+    <div>#content#</div>
+    </div>
+  </body>
+</html>
